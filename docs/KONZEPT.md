@@ -52,6 +52,7 @@ Wie [kc3k](https://github.com/seidenraupe/kc3k) und [learnbox-website](https://g
 
 - Vite, statisches HTML unter `src/`
 - Partials für Kopf, Fuss und gemeinsame Meta-Tags
+- Hausschrift **Modern Era** (CI Die Mitte: Extra Bold / Medium, Ersatz Arial)
 - `base: "./"` damit GitHub Pages und später das Hosting der Domain in der Wurzel funktionieren
 - Node-Tests gegen den Build (`npm run check`)
 
@@ -59,7 +60,7 @@ Produktiv bleibt die Domain **andrezuraikat.ch**. Hosting-Entscheidung (z. B. Kr
 
 ## Offene Punkte
 
-- Portrait- und Aktionsfotos beschaffen (Rechte klären)
 - Kontaktformular: vorerst `mailto:`; PHP-Mail wie bei learnbox nur falls gewünscht
 - Spendenhinweis nach der Wahl: Konto belassen oder auf Mandatsarbeit umstellen?
 - Social-Media-Profile verlinken, sobald bestätigt
+- Höher aufgelöste Porträts von Monika Bosshard und Roland Zolliker (Wix lieferte nur sehr kleine Dateien)

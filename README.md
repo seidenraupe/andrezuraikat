@@ -23,20 +23,27 @@ npm run preview  # Produktionsbuild lokal ansehen
 
 | Seite | Inhalt |
 | --- | --- |
-| `index.html` | Start, Mandat, sechs Standpunkte im Überblick |
-| `ueber.html` | Werdegang, Kommission, «Kurz nachgefragt» |
+| `index.html` | Start, Banner, Porträt, Standpunkte, Fassade |
+| `ueber.html` | Werdegang, Karate, Smartvote, «Kurz nachgefragt» |
+| `engagement.html` | Interview mit Porträt |
 | `standpunkte.html` | Die sechs politischen Schwerpunkte |
-| `kontakt.html` | E-Mail, Adresse, Spendenkonto, Links |
+| `referenzen.html` | Stimmen aus Politik, Sport und Wirtschaft |
+| `aktuell.html` | Abstimmungsempfehlungen |
+| `kontakt.html` | E-Mail, Adresse, Spendenkonto, Porträt Obertor |
 | `impressum.html` / `datenschutz.html` | Rechtliches |
 
-Texte, Kopf- und Fusszeile stehen unter `src/`. Erscheinungsbild: `src/css/styles.css`. Gemeinsame Teile: `src/partials/`.
+Fotos aus der Wix-Seite liegen unter `src/media/`. Übersicht: [docs/FOTOS.md](docs/FOTOS.md).
 
 ## Dokumentation
 
 - [Konzept](docs/KONZEPT.md) — Ziel, Inhalt, Architektur, was von Wix übernommen wird
+- [Fotos](docs/FOTOS.md) — Herkunft und Einsatz der Bilder von andrezuraikat.ch
 - [GitHub](docs/GITHUB.md) — Repository, Preview, Alltagsarbeit
 - [Windows](docs/WINDOWS.md) — lokales Arbeiten ohne WSL
 
-## Farben
+## Farben und Schrift
 
-Angelehnt an das CI von Die Mitte: Orange `#FF9B00` (RGB 255 155 0) und Blau `#003C69` (RGB 0 60 105).
+Angelehnt an das [CI von Die Mitte](https://die-mitte.ch/wp-content/uploads/2021/11/DE_DieMitte_BrandManual_210714.pdf):
+
+- Orange `#FF9B00` (RGB 255 155 0) und Blau `#003C69` (RGB 0 60 105)
+- Hausschrift **Modern Era**: Extra Bold für Überschriften, Medium für Lauftext (wie auf die-mitte.ch). System-Ersatz laut Manual: Arial.
