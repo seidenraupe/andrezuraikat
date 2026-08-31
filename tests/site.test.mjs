@@ -54,6 +54,9 @@ test("Startseite nennt Mandat und Partei", () => {
   assert.match(html, /data-stimmen-random/);
   assert.match(html, /Alle Stimmen/);
   assert.match(html, /silvia-steiner/);
+  assert.match(html, /Trainingsanzug/);
+  assert.match(html, /Lasagne/);
+  assert.match(html, /hero-copy/);
 });
 
 test("Impressum nennt inspiroo als Umsetzung", () => {
@@ -111,6 +114,18 @@ test("Referenzen enthalten die Stimmen mit Porträts", () => {
   assert.match(html, /Mike Künzle/);
   assert.match(html, /Luana Antunes/);
   assert.match(html, /silvia-steiner/);
+});
+
+test("Interview und Profil übernehmen die Wix-Inhalte", () => {
+  const interview = readFileSync(resolve(dist, "engagement.html"), "utf8");
+  assert.match(interview, /Christian Huggenberg/);
+  assert.match(interview, /Bushido/);
+  assert.match(interview, /Live every moment as if it was your last/);
+  assert.match(interview, /Karate/);
+  const profil = readFileSync(resolve(dist, "ueber.html"), "utf8");
+  assert.match(profil, /Karate-Club 3K/);
+  assert.match(profil, /Video: Mein Lebensweg/);
+  assert.match(profil, /andrezuraikat\.ch\/mein-profil/);
 });
 
 test("CI-Schrift Modern Era ist im Build", () => {
