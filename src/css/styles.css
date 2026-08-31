@@ -762,32 +762,35 @@ table.geschaefte {
 }
 
 .interview-hero {
-  min-height: min(92vh, 48rem);
+  min-height: min(90vh, 50rem);
   background: var(--paper);
 }
 
 .interview-hero .hero-bg {
+  inset: 0 0 0 auto;
+  width: min(64%, 52rem);
   object-fit: cover;
-  object-position: 18% 42%;
+  object-position: 20% 52%;
 }
 
 .interview-hero-overlay {
-  min-height: min(92vh, 48rem);
+  min-height: min(90vh, 50rem);
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 5rem 0 3rem;
   background: linear-gradient(
-    270deg,
-    rgb(247 241 232 / 0.94) 0%,
-    rgb(247 241 232 / 0.62) 34%,
-    rgb(247 241 232 / 0.12) 58%,
-    transparent 78%
+    90deg,
+    rgb(247 241 232 / 0.97) 0%,
+    rgb(247 241 232 / 0.78) 28%,
+    rgb(247 241 232 / 0.2) 48%,
+    transparent 64%
   );
 }
 
 .interview-hero-copy {
-  margin-left: auto;
-  max-width: 28rem;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 30rem;
   color: var(--ink);
 }
 
@@ -802,11 +805,13 @@ table.geschaefte {
 @media (max-width: 55.99rem) {
   .interview-hero,
   .interview-hero-overlay {
-    min-height: min(88vh, 40rem);
+    min-height: min(86vh, 42rem);
   }
 
   .interview-hero .hero-bg {
-    object-position: 22% 36%;
+    inset: 0;
+    width: 100%;
+    object-position: 28% 42%;
   }
 
   .interview-hero-overlay {
@@ -820,7 +825,6 @@ table.geschaefte {
   }
 
   .interview-hero-copy {
-    margin-left: 0;
     max-width: 36rem;
   }
 }
