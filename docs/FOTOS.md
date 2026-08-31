@@ -7,7 +7,7 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `logo-z.png` | Favicon / Wortmarke | Kopfzeile, Favicon |
 | `banner-die-mitte.jpg` | Site-Banner «André Zuraikat · Die Mitte» | Startseite oben |
 | `portrait-hero.jpg` | Startseite | Hero-Porträt |
-| `architektur.jpg` | Startseite | Fassadenfoto unten |
+| `architektur.jpg` | Startseite | derzeit ungenutzt |
 | `portrait-engagement.jpg` | `/engagement` | Über mich, Interview |
 | `portrait-obertor.jpg` | `/kontakt` | Kontakt (Haltestelle Obertor) |
 | `smartspider.jpg` | `/mein-profil` | Smartvote-Profil |

@@ -10,6 +10,7 @@ const pages = [
   "standpunkte",
   "referenzen",
   "engagement",
+  "geschaefte",
   "aktuell",
   "kontakt",
   "impressum",

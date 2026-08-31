@@ -23,11 +23,12 @@ npm run preview  # Produktionsbuild lokal ansehen
 
 | Seite | Inhalt |
 | --- | --- |
-| `index.html` | Start, Banner, Porträt, Standpunkte, Fassade |
+| `index.html` | Start mit Overlay-Porträt, Standpunkte, aktuelle Vorstösse |
 | `ueber.html` | Werdegang, Karate, Smartvote, «Kurz nachgefragt» |
 | `engagement.html` | Interview mit Porträt |
 | `standpunkte.html` | Die sechs politischen Schwerpunkte |
 | `referenzen.html` | Stimmen aus Politik, Sport und Wirtschaft |
+| `geschaefte.html` | Vorstösse im Stadtparlament, neueste zuerst |
 | `aktuell.html` | Abstimmungsempfehlungen |
 | `kontakt.html` | E-Mail, Adresse, Spendenkonto, Porträt Obertor |
 | `impressum.html` / `datenschutz.html` | Rechtliches |

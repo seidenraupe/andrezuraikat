@@ -11,6 +11,7 @@ const pages = [
   "standpunkte.html",
   "referenzen.html",
   "engagement.html",
+  "geschaefte.html",
   "aktuell.html",
   "kontakt.html",
   "impressum.html",
@@ -48,7 +49,22 @@ test("Startseite nennt Mandat und Partei", () => {
   assert.match(html, /Die Mitte/);
   assert.match(html, /Winterthur/);
   assert.match(html, /portrait-hero/);
-  assert.match(html, /banner-die-mitte/);
+  assert.match(html, /logo-die-mitte-negativ/);
+  assert.match(html, /geschaefte\.html/);
+});
+
+test("Parlamentsseite listet Vorstösse neueste zuerst", () => {
+  const html = readFileSync(resolve(dist, "geschaefte.html"), "utf8");
+  assert.match(html, /Meine Geschäfte/);
+  assert.match(html, /2026\.86/);
+  assert.match(html, /2019\.79/);
+  assert.match(html, /Erstunterzeichner/);
+  assert.match(html, /Mitunterzeichner/);
+  assert.match(html, /parlament\.winterthur\.ch\/behoerdenmitglieder\/280949/);
+  const first = html.indexOf("2026.86");
+  const last = html.indexOf("2019.79");
+  assert.ok(first > 0 && last > first, "neueste Geschäfte müssen zuerst stehen");
+  assert.equal((html.match(/<tr>/g) || []).length, 31);
 });
 
 test("Kontakt zeigt E-Mail und Spenden-IBAN", () => {

@@ -93,21 +93,41 @@ a:hover {
 }
 
 .header-inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 0.75rem 1.25rem;
+  padding: 0.7rem 0;
+}
+
+@media (max-width: 64rem) {
+  .header-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+  }
 }
 
 .wordmark {
   color: #fff;
   text-decoration: none;
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
   line-height: 1.2;
+}
+
+.party-logo {
+  justify-self: end;
+}
+
+.party-logo img {
+  display: block;
+  width: 3.4rem;
+  height: auto;
 }
 
 .wordmark-logo {
@@ -156,6 +176,57 @@ a:hover {
   background:
     linear-gradient(180deg, rgb(0 60 105 / 0.08), transparent 55%),
     var(--paper);
+}
+
+.hero-cover {
+  position: relative;
+  isolation: isolate;
+  padding: 0;
+  min-height: min(88vh, 44rem);
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% 28%;
+  border-radius: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: min(88vh, 44rem);
+  padding: 5.5rem 0 3.25rem;
+  background: linear-gradient(
+    105deg,
+    rgb(0 60 105 / 0.78) 0%,
+    rgb(0 60 105 / 0.38) 42%,
+    rgb(0 60 105 / 0.08) 72%
+  );
+}
+
+.hero-card {
+  max-width: 36rem;
+  padding: 1.6rem 1.75rem 1.7rem;
+  border-radius: 1.1rem;
+  background: rgb(247 241 232 / 0.94);
+  box-shadow: 0 1.25rem 2.5rem rgb(0 20 40 / 0.22);
+}
+
+.hero-card .lede {
+  color: var(--muted);
+}
+
+.hero-card .button-ghost {
+  background: transparent;
 }
 
 .hero-split {
@@ -530,4 +601,76 @@ figure {
 figcaption {
   margin-top: 0.5rem;
   text-align: center;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+}
+
+table.geschaefte {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.geschaefte th,
+.geschaefte td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.geschaefte thead th {
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.geschaefte tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.geschaefte tbody tr:hover {
+  background: #efe6d6;
+}
+
+.geschaefte .num {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.geschaefte td a {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.geschaefte td a:hover {
+  text-decoration: underline;
+}
+
+.geschaeft-summary {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.source-note {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.teaser-meta {
+  margin: 0 0 0.35rem;
+  color: var(--orange);
+  font-weight: 800;
+  font-size: 0.9rem;
 }
