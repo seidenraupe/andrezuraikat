@@ -8,7 +8,7 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `banner-die-mitte.jpg` | Site-Banner «André Zuraikat · Die Mitte» | Startseite oben |
 | `portrait-hero.jpg` | Startseite | Hero-Porträt |
 | `architektur.jpg` | Startseite | derzeit ungenutzt |
-| Grafiken `icon-*.svg` | neu | Standpunkte, Interview, Video-Play |
+| `lebensweg-karate.mp4` | Profil «Mein Lebensweg: Karate» | Über mich |
 | `portrait-engagement.jpg` | `/engagement` | Über mich, Interview |
 | `portrait-obertor.jpg` | `/kontakt` | Kontakt (Haltestelle Obertor) |
 | `smartspider.jpg` | `/mein-profil` | Smartvote-Profil |

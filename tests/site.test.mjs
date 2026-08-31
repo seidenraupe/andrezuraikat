@@ -124,8 +124,8 @@ test("Interview und Profil übernehmen die Wix-Inhalte", () => {
   assert.match(interview, /Karate/);
   const profil = readFileSync(resolve(dist, "ueber.html"), "utf8");
   assert.match(profil, /Karate-Club 3K/);
-  assert.match(profil, /Video: Mein Lebensweg/);
-  assert.match(profil, /andrezuraikat\.ch\/mein-profil/);
+  assert.match(profil, /lebensweg-karate/);
+  assert.match(profil, /type="video\/mp4"/);
 });
 
 test("CI-Schrift Modern Era ist im Build", () => {
