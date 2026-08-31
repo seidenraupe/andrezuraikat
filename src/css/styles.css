@@ -761,6 +761,18 @@ table.geschaefte {
   max-width: 46rem;
 }
 
+.interview-head {
+  padding-bottom: 0.75rem;
+}
+
+.interview-body {
+  padding-top: 1.15rem;
+}
+
+.interview-body .quote {
+  margin-block: 2.25rem 1.5rem;
+}
+
 .interview-q {
   margin: 1.85rem 0 0.45rem;
   font-weight: 800;
