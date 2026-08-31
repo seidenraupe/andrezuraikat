@@ -1,0 +1,46 @@
+{
+  "people": [
+    {
+      "name": "Dr. Silvia Steiner",
+      "role": "Regierungsrätin Kanton Zürich",
+      "image": "silvia-steiner.jpg",
+      "quote": "André ist ein Gewinn für die Mitte und die Stadt Winterthur. Ich schätze sein Engagement für die Bildung im Kanton Zürich."
+    },
+    {
+      "name": "Mike Künzle",
+      "role": "Stadtpräsident von Winterthur",
+      "image": "mike-kuenzle.jpg",
+      "quote": "André kenne ich als engagierten, zuverlässigen und vertrauensvollen Parteikollegen."
+    },
+    {
+      "name": "Monika Bosshard",
+      "role": "Jugendarbeiterin, Hauptleiterin Kinder- und Jugendtreff Gutschick",
+      "image": "monika-bosshard.jpg",
+      "quote": "Aus meiner Tätigkeit im Quartier Gutschick kenne ich André als engagierten Menschen, der sich für das Wohl der Kinder, Jugendlichen und Familien einsetzt. Interessiert und offen geht er auf die Anliegen der Menschen ein."
+    },
+    {
+      "name": "Christian Huggenberg",
+      "role": "Unternehmer in Winterthur",
+      "image": "christian-huggenberg.jpg",
+      "quote": "André ist ein Mensch, den ich sehr schätze. Er hat einen ausgeprägten Gerechtigkeitssinn verbunden mit der Gabe, das Wesentliche zu erkennen und danach zu handeln. Engagiert und zugleich umsichtig."
+    },
+    {
+      "name": "Luana Antunes",
+      "role": "Primarlehrerin",
+      "image": "luana-antunes.jpg",
+      "quote": "Seit meiner Kindheit begleitete und betreute mich André im Karate-Club. Ich schätzte seine Unterstützung und dass er stets an mich geglaubt hat."
+    },
+    {
+      "name": "Roland Zolliker",
+      "role": "Ehrenpräsident Swiss Karate Federation",
+      "image": "roland-zolliker.jpg",
+      "quote": "André sehe ich oft als nationalen Schiedsrichter an verschiedenen Turnieren. Ich schätze sein Engagement und seinen Einsatz für unseren Sport."
+    },
+    {
+      "name": "Giuseppe Ticchio",
+      "role": "Rentner",
+      "image": "giuseppe-ticchio.jpg",
+      "quote": "André ist einer, der immer ein offenes Ohr hat für Anliegen aller Menschen."
+    }
+  ]
+}

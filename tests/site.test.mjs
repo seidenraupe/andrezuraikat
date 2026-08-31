@@ -51,6 +51,16 @@ test("Startseite nennt Mandat und Partei", () => {
   assert.match(html, /portrait-hero/);
   assert.match(html, /logo-die-mitte/);
   assert.match(html, /geschaefte\.html/);
+  assert.match(html, /data-stimmen-random/);
+  assert.match(html, /Alle Stimmen/);
+  assert.match(html, /silvia-steiner/);
+});
+
+test("Impressum nennt inspiroo als Umsetzung", () => {
+  const html = readFileSync(resolve(dist, "impressum.html"), "utf8");
+  assert.match(html, /inspiroo gmbh/);
+  assert.match(html, /8400 Winterthur/);
+  assert.match(html, /inspiroo\.ch/);
 });
 
 test("Parlamentsseite listet Vorstösse neueste zuerst", () => {
