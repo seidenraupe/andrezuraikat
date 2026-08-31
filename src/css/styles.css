@@ -768,9 +768,9 @@ table.geschaefte {
 
 .interview-hero .hero-bg {
   inset: 0 0 0 auto;
-  width: min(64%, 52rem);
+  width: 92%;
   object-fit: cover;
-  object-position: 20% 52%;
+  object-position: 16% 50%;
 }
 
 .interview-hero-overlay {
@@ -780,10 +780,10 @@ table.geschaefte {
   padding: 5rem 0 3rem;
   background: linear-gradient(
     90deg,
-    rgb(247 241 232 / 0.97) 0%,
-    rgb(247 241 232 / 0.78) 28%,
-    rgb(247 241 232 / 0.2) 48%,
-    transparent 64%
+    rgb(247 241 232 / 0.62) 0%,
+    rgb(247 241 232 / 0.28) 30%,
+    rgb(247 241 232 / 0.06) 48%,
+    transparent 62%
   );
 }
 
@@ -802,30 +802,31 @@ table.geschaefte {
   color: var(--muted);
 }
 
-@media (max-width: 55.99rem) {
-  .interview-hero,
-  .interview-hero-overlay {
-    min-height: min(86vh, 42rem);
+@media (max-width: 63.99rem) {
+  .interview-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
   }
 
   .interview-hero .hero-bg {
-    inset: 0;
+    position: relative;
+    inset: auto;
     width: 100%;
-    object-position: 28% 42%;
+    height: min(62vh, 32rem);
+    object-position: 28% 22%;
   }
 
   .interview-hero-overlay {
-    align-items: flex-end;
-    background: linear-gradient(
-      0deg,
-      rgb(247 241 232 / 0.96) 0%,
-      rgb(247 241 232 / 0.72) 38%,
-      transparent 72%
-    );
+    position: relative;
+    min-height: 0;
+    align-items: flex-start;
+    padding: 1.5rem 0 0.25rem;
+    background: var(--paper);
   }
 
   .interview-hero-copy {
-    max-width: 36rem;
+    max-width: 40rem;
   }
 }
 
