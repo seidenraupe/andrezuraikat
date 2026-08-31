@@ -762,16 +762,17 @@ table.geschaefte {
 }
 
 .interview-hero {
-  min-height: min(70vh, 36rem);
+  min-height: min(92vh, 48rem);
   background: var(--paper);
 }
 
 .interview-hero .hero-bg {
-  object-position: 12% 22%;
+  object-fit: cover;
+  object-position: 18% 42%;
 }
 
 .interview-hero-overlay {
-  min-height: min(70vh, 36rem);
+  min-height: min(92vh, 48rem);
   align-items: center;
   justify-content: flex-end;
   padding: 5rem 0 3rem;
@@ -801,7 +802,11 @@ table.geschaefte {
 @media (max-width: 55.99rem) {
   .interview-hero,
   .interview-hero-overlay {
-    min-height: min(78vh, 34rem);
+    min-height: min(88vh, 40rem);
+  }
+
+  .interview-hero .hero-bg {
+    object-position: 22% 36%;
   }
 
   .interview-hero-overlay {
