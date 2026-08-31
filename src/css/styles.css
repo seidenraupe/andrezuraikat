@@ -762,15 +762,45 @@ table.geschaefte {
 }
 
 .interview-head {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.interview-head .wrap {
+  max-width: var(--wrap);
+}
+
+.interview-head .hero-split {
+  align-items: start;
+}
+
+.interview-photo {
+  aspect-ratio: 4 / 5;
+  min-height: 22rem;
+  max-height: 36rem;
+  object-position: center 20%;
+}
+
+@media (min-width: 56rem) {
+  .interview-head .hero-split {
+    grid-template-columns: minmax(16rem, 0.85fr) minmax(22rem, 1.5fr);
+    gap: 2.5rem;
+  }
+
+  .interview-photo {
+    min-height: 28rem;
+  }
 }
 
 .interview-body {
-  padding-top: 1.15rem;
+  padding-top: 0.75rem;
+}
+
+.interview-body .interview-q:first-child {
+  margin-top: 0;
 }
 
 .interview-body .quote {
-  margin-block: 2.25rem 1.5rem;
+  margin-block: 2.5rem 2rem;
 }
 
 .interview-q {
@@ -788,7 +818,7 @@ table.geschaefte {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  margin: 0 0 1.5rem;
+  margin: 2.5rem 0 0;
 }
 
 .interview-meta img {
