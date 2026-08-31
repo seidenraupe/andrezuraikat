@@ -122,11 +122,16 @@ a:hover {
 
 .party-logo {
   justify-self: end;
+  display: flex;
+  align-items: center;
+  padding: 0.28rem 0.4rem 0.28rem 0.32rem;
+  border-radius: 0.45rem;
+  background: #fff;
 }
 
 .party-logo img {
   display: block;
-  width: 3.4rem;
+  width: 4.75rem;
   height: auto;
 }
 

@@ -49,7 +49,7 @@ test("Startseite nennt Mandat und Partei", () => {
   assert.match(html, /Die Mitte/);
   assert.match(html, /Winterthur/);
   assert.match(html, /portrait-hero/);
-  assert.match(html, /logo-die-mitte-negativ/);
+  assert.match(html, /logo-die-mitte/);
   assert.match(html, /geschaefte\.html/);
 });
 
