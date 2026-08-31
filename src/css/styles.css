@@ -777,7 +777,6 @@ table.geschaefte {
   width: 92%;
   object-fit: cover;
   object-position: 16% 50%;
-  transform: scaleX(-1);
 }
 
 .interview-hero-overlay {
@@ -823,7 +822,6 @@ table.geschaefte {
     width: 100%;
     height: min(62vh, 32rem);
     object-position: 28% 22%;
-    transform: scaleX(-1);
   }
 
   .interview-hero-overlay {
