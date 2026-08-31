@@ -99,6 +99,7 @@ test("Standpunkte enthalten alle sechs Schwerpunkte", () => {
   ]) {
     assert.match(html, new RegExp(title));
   }
+  assert.equal((html.match(/class="card-icon"/g) || []).length, 6);
 });
 
 test("Wix-Fotos liegen lokal unter src/media", () => {

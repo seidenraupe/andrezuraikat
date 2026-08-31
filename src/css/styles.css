@@ -516,6 +516,12 @@ h1 {
   max-width: 46rem;
 }
 
+.standpunkte .card-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: 0.55rem;
+}
+
 .standpunkte h2 {
   margin: 0 0 0.5rem;
   color: var(--navy);
@@ -771,15 +777,16 @@ table.geschaefte {
   width: 92%;
   object-fit: cover;
   object-position: 16% 50%;
+  transform: scaleX(-1);
 }
 
 .interview-hero-overlay {
   min-height: min(90vh, 50rem);
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding: 5rem 0 3rem;
   background: linear-gradient(
-    90deg,
+    270deg,
     rgb(247 241 232 / 0.62) 0%,
     rgb(247 241 232 / 0.28) 30%,
     rgb(247 241 232 / 0.06) 48%,
@@ -788,10 +795,11 @@ table.geschaefte {
 }
 
 .interview-hero-copy {
-  margin-left: 0;
-  margin-right: auto;
+  margin-left: auto;
+  margin-right: 0;
   max-width: 30rem;
   color: var(--ink);
+  text-align: right;
 }
 
 .interview-hero-copy h1 {
@@ -815,18 +823,23 @@ table.geschaefte {
     width: 100%;
     height: min(62vh, 32rem);
     object-position: 28% 22%;
+    transform: scaleX(-1);
   }
 
   .interview-hero-overlay {
     position: relative;
     min-height: 0;
     align-items: flex-start;
+    justify-content: flex-start;
     padding: 1.5rem 0 0.25rem;
     background: var(--paper);
   }
 
   .interview-hero-copy {
     max-width: 40rem;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
   }
 }
 
