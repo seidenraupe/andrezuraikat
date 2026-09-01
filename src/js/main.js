@@ -1,7 +1,7 @@
 import stimmen from "../data/stimmen.json";
 
 const portraits = import.meta.glob(
-  "../media/{silvia-steiner,mike-kuenzle,monika-bosshard,christian-huggenberg,luana-antunes,roland-zolliker,giuseppe-ticchio}.jpg",
+  "../media/{silvia-steiner,mike-kuenzle,monika-bosshard,christian-huggenberg,luana-antunes,roland-zolliker,giuseppe-ticchio,yvonne-buergin-portrait}.jpg",
   {
     eager: true,
     import: "default",

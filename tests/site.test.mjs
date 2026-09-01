@@ -34,7 +34,7 @@ const photos = [
   "luana-antunes.jpg",
   "roland-zolliker.jpg",
   "giuseppe-ticchio.jpg",
-  "yvonne-buergin.jpg",
+  "yvonne-buergin-portrait.jpg",
 ];
 
 test("Produktionsbuild enthält alle Seiten", () => {

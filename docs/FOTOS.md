@@ -21,7 +21,7 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `luana-antunes.jpg` | `/erfahrung` | Stimmen |
 | `roland-zolliker.jpg` | `/erfahrung` | Stimmen |
 | `giuseppe-ticchio.jpg` | `/erfahrung` | Stimmen |
-| `yvonne-buergin.jpg` | bereitgestellt (Gesicht aus Original zugeschnitten) | Stimmen |
+| `yvonne-buergin-portrait.jpg` | bereitgestellt | Stimmen |
 
 Wappen auf der Seite Aktuell: `wappen-schweiz.svg`, `wappen-zuerich.svg` (vereinfacht), `wappen-winterthur.svg` (offizielles SVG von [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wappen_Winterthur.svg)).
 
