@@ -23,6 +23,6 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `giuseppe-ticchio.jpg` | `/erfahrung` | Stimmen |
 | `yvonne-buergin.jpg` | bereitgestellt (Gesicht aus Original zugeschnitten) | Stimmen |
 
-Wappen auf der Seite Aktuell: `wappen-schweiz.svg`, `wappen-zuerich.svg`, `wappen-winterthur.svg` (vereinfachte SVG-Darstellungen).
+Wappen auf der Seite Aktuell: `wappen-schweiz.svg`, `wappen-zuerich.svg` (vereinfacht), `wappen-winterthur.svg` (offizielles SVG von [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wappen_Winterthur.svg)).
 
 Wix-Standard-Icons (Facebook, Instagram, LinkedIn, Twitter) wurden nicht übernommen.
