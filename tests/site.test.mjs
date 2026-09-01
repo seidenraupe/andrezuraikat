@@ -69,7 +69,7 @@ test("Impressum nennt inspiroo als Umsetzung", () => {
 
 test("Parlamentsseite listet Vorstösse neueste zuerst", () => {
   const html = readFileSync(resolve(dist, "geschaefte.html"), "utf8");
-  assert.match(html, /Meine Geschäfte/);
+  assert.match(html, /Mein Engagement/);
   assert.match(html, /2026\.86/);
   assert.match(html, /2019\.79/);
   assert.match(html, /Erstunterzeichner/);

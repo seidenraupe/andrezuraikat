@@ -43,7 +43,7 @@ const html = `<!DOCTYPE html>
       <section class="page-intro">
         <div class="wrap">
           <p class="kicker">Stadtparlament</p>
-          <h1>Meine Geschäfte</h1>
+          <h1>Mein Engagement</h1>
           <p class="lede">
             Vorstösse, die ich als Stadtparlamentarier eingebracht oder
             mitunterzeichnet habe. Neueste Geschäfte zuerst. Quelle:
