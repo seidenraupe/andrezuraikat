@@ -34,6 +34,7 @@ const photos = [
   "luana-antunes.jpg",
   "roland-zolliker.jpg",
   "giuseppe-ticchio.jpg",
+  "yvonne-buergin.jpg",
 ];
 
 test("Produktionsbuild enthält alle Seiten", () => {
@@ -115,6 +116,8 @@ test("Referenzen enthalten die Stimmen mit Porträts", () => {
   assert.match(html, /Mike Künzle/);
   assert.match(html, /Luana Antunes/);
   assert.match(html, /silvia-steiner/);
+  assert.match(html, /Yvonne Bürgin/);
+  assert.match(html, /yvonne-buergin/);
 });
 
 test("Interview und Profil übernehmen die Wix-Inhalte", () => {

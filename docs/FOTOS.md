@@ -9,7 +9,8 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `portrait-hero.jpg` | Startseite | Hero-Porträt |
 | `architektur.jpg` | Startseite | derzeit ungenutzt |
 | `lebensweg-karate.mp4` | Profil «Mein Lebensweg: Karate» | Über mich |
-| `portrait-engagement.jpg` | `/engagement` | Über mich, Interview |
+| `lebensweg-karate-poster.jpg` | Video-Vorschaubild (erster Frame) | Über mich |
+| `portrait-engagement.jpg` | `/engagement` | Interview |
 | `portrait-obertor.jpg` | `/kontakt` | Kontakt (Haltestelle Obertor) |
 | `smartspider.jpg` | `/mein-profil` | Smartvote-Profil |
 | `abstimmung.jpg` | `/abstimmungen` | Aktuell |
@@ -20,7 +21,8 @@ Alle Bilder stammen von [andrezuraikat.ch](https://www.andrezuraikat.ch/) (`stat
 | `luana-antunes.jpg` | `/erfahrung` | Stimmen |
 | `roland-zolliker.jpg` | `/erfahrung` | Stimmen |
 | `giuseppe-ticchio.jpg` | `/erfahrung` | Stimmen |
+| `yvonne-buergin.jpg` | bereitgestellt (Gesicht aus Original zugeschnitten) | Stimmen |
 
-Yvonne Bürgin hatte auf Wix kein eigenes Foto — die Stimme steht ohne Porträt.
+Wappen auf der Seite Aktuell: `wappen-schweiz.svg`, `wappen-zuerich.svg`, `wappen-winterthur.svg` (vereinfachte SVG-Darstellungen).
 
 Wix-Standard-Icons (Facebook, Instagram, LinkedIn, Twitter) wurden nicht übernommen.

@@ -468,6 +468,37 @@ h1 {
   max-width: 42rem;
 }
 
+.abstimmungen {
+  display: grid;
+  gap: 2.25rem;
+}
+
+.abstimm-block-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.abstimm-block-head h2 {
+  margin: 0;
+}
+
+.wappen {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+}
+
+.abstimm-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.abstimm-block li + li {
+  margin-top: 0.45rem;
+}
+
 .timeline {
   padding-left: 0;
   list-style: none;
@@ -493,6 +524,8 @@ h1 {
   .qa-home {
     grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
+    row-gap: 1.1rem;
+    align-items: start;
   }
 
   .qa-home dt {
@@ -508,6 +541,14 @@ h1 {
 .qa dd {
   margin: 0;
   color: var(--muted);
+}
+
+@media (min-width: 52rem) {
+  .qa-home dt,
+  .qa-home dd {
+    margin-top: 0;
+    align-self: start;
+  }
 }
 
 .standpunkte {
@@ -794,15 +835,26 @@ table.geschaefte {
 }
 
 .interview-hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  max-width: min(30rem, 100%);
   margin-left: auto;
   margin-right: 0;
-  max-width: 30rem;
   color: var(--ink);
   text-align: right;
 }
 
 .interview-hero-copy h1 {
+  width: 100%;
   color: var(--ink);
+  text-align: right;
+}
+
+.interview-hero-copy .kicker,
+.interview-hero-copy .lede {
+  text-align: right;
 }
 
 .interview-hero-copy .lede {
@@ -837,6 +889,13 @@ table.geschaefte {
     max-width: 40rem;
     margin-left: 0;
     margin-right: auto;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .interview-hero-copy h1,
+  .interview-hero-copy .kicker,
+  .interview-hero-copy .lede {
     text-align: left;
   }
 }
