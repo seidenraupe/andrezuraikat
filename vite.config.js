@@ -12,6 +12,7 @@ const pages = [
   "engagement",
   "geschaefte",
   "aktuell",
+  "kantonsrat",
   "kontakt",
   "impressum",
   "datenschutz",

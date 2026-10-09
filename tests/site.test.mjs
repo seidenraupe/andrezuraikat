@@ -12,6 +12,7 @@ const pages = [
   "referenzen.html",
   "engagement.html",
   "geschaefte.html",
+  "kantonsrat.html",
   "aktuell.html",
   "kontakt.html",
   "impressum.html",
@@ -47,6 +48,8 @@ test("Produktionsbuild enthält alle Seiten", () => {
 test("Startseite nennt Mandat und Partei", () => {
   const html = readFileSync(resolve(dist, "index.html"), "utf8");
   assert.match(html, /Stadtparlamentarier/);
+  assert.match(html, /Kantonsrat 2027/);
+  assert.match(html, /7\. März 2027/);
   assert.match(html, /Die Mitte/);
   assert.match(html, /Winterthur/);
   assert.match(html, /portrait-hero/);

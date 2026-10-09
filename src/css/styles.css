@@ -358,6 +358,65 @@ h1 {
   font-size: 1rem;
 }
 
+.band-campaign .band-inner {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.band-campaign strong {
+  color: var(--orange);
+}
+
+.nav-campaign {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--orange);
+  color: var(--ink) !important;
+  font-weight: 800;
+}
+
+.nav-campaign:hover {
+  filter: brightness(1.05);
+  color: var(--ink) !important;
+}
+
+.nav-campaign[aria-current="page"] {
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.campaign-themes {
+  display: grid;
+  gap: 2rem;
+}
+
+.campaign-theme h2 {
+  margin: 0.75rem 0 0.65rem;
+  font-size: 1.5rem;
+}
+
+.campaign-track {
+  margin: 0.85rem 0 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--orange);
+  background: var(--card);
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.campaign-teasers .card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.campaign-intro .lede a {
+  font-weight: 800;
+}
+
+.abstimm-outcome {
+  color: var(--navy);
+  font-weight: 800;
+}
+
 .section {
   padding: 3.5rem 0;
 }
