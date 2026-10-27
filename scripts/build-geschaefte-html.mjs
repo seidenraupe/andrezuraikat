@@ -1,5 +1,4 @@
 import { readFileSync, writeFileSync } from "node:fs";
-import { markFile } from "./mark-edits.mjs";
 
 const items = JSON.parse(readFileSync("src/data/geschaefte.json", "utf8"));
 
@@ -89,5 +88,4 @@ ${rows}
 `;
 
 writeFileSync("src/geschaefte.html", html);
-markFile("src/geschaefte.html");
 console.log(`wrote ${items.length} rows`);

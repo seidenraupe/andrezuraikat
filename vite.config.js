@@ -64,15 +64,12 @@ export default defineConfig({
     outDir: resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        ...Object.fromEntries(
-          pages.map((name) => [
-            name,
-            resolve(root, name === "index" ? "index.html" : `${name}.html`),
-          ]),
-        ),
-        "edit/index": resolve(root, "edit/index.html"),
-      },
+      input: Object.fromEntries(
+        pages.map((name) => [
+          name,
+          resolve(root, name === "index" ? "index.html" : `${name}.html`),
+        ]),
+      ),
     },
   },
 });

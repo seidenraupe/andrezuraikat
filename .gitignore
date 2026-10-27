@@ -5,11 +5,5 @@ dist
 .env
 .env.*
 !.env.example
-edit/redaktion/config.mail.php
-edit/redaktion/storage/*.json
-edit/redaktion/storage/*.txt
-deploy/edit/
-.dev.vars
-.wrangler/
 agent-tools
 .vscode
