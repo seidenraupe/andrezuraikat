@@ -41,6 +41,7 @@ Fotos aus der Wix-Seite liegen unter `src/media/`. Übersicht: [docs/FOTOS.md](d
 - [Fotos](docs/FOTOS.md) — Herkunft und Einsatz der Bilder von andrezuraikat.ch
 - [GitHub](docs/GITHUB.md) — Repository, Preview, Alltagsarbeit
 - [Windows](docs/WINDOWS.md) — lokales Arbeiten ohne WSL
+- [Redaktion](docs/EDIT.md) — Vorschau unter `/edit/`, Rollen Redaktion und Freigabe
 
 ## Farben und Schrift
 

@@ -1,0 +1,4 @@
+# PHP-Dateien in diesem Ordner nur über /edit/zugang/serve.php ausführen.
+<FilesMatch "^(lib\.php|config\.mail\.php)$">
+  Require all denied
+</FilesMatch>

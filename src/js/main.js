@@ -1,4 +1,6 @@
 import stimmen from "../data/stimmen.json";
+import { loadEditConfig, readSession, siteRoot } from "./edit-config.js";
+import { startEditMode } from "./edit-mode.js";
 
 const portraits = import.meta.glob(
   "../media/{silvia-steiner,mike-kuenzle,monika-bosshard,christian-huggenberg,luana-antunes,roland-zolliker,giuseppe-ticchio,yvonne-buergin-portrait}.jpg",
@@ -13,7 +15,42 @@ if (year) {
   year.textContent = String(new Date().getFullYear());
 }
 
-initStimmenRandom();
+applyContentLive();
+
+async function applyContentLive() {
+  try {
+    const response = await fetch(new URL("data/content-live.json", siteRoot()));
+    if (response.ok) applyFields((await response.json()).fields);
+  } catch {
+    /* ohne Freigabe-Datei bleibt der gebaute Text */
+  }
+  try {
+    const config = await loadEditConfig();
+    if (config.api) {
+      const response = await fetch(`${config.api}/live`);
+      if (response.ok) applyFields((await response.json()).fields);
+    }
+  } catch {
+    /* Vorschau bleibt beim gebauten Text, wenn die Schnittstelle fehlt */
+  }
+  initStimmenRandom();
+  const session = readSession();
+  if (session?.token) {
+    try {
+      await startEditMode(session);
+    } catch {
+      /* Bearbeitung bleibt aus */
+    }
+  }
+}
+
+function applyFields(fields) {
+  if (!fields || typeof fields !== "object") return;
+  for (const [id, html] of Object.entries(fields)) {
+    const el = document.querySelector(`[data-edit="${CSS.escape(id)}"]`);
+    if (el && typeof html === "string") el.innerHTML = html;
+  }
+}
 
 function initStimmenRandom() {
   const root = document.querySelector("[data-stimmen-random]");

@@ -38,6 +38,16 @@ const photos = [
   "yvonne-buergin-portrait.jpg",
 ];
 
+test("Redaktionsseite liegt unter /edit/", () => {
+  const html = readFileSync(resolve(dist, "edit", "index.html"), "utf8");
+  assert.match(html, /Redaktions-Modus/);
+  assert.match(html, /noindex/);
+  assert.equal(existsSync(resolve(dist, "edit-config.json")), true);
+  const bundles = jsFiles(dist).map((file) => readFileSync(file, "utf8"));
+  assert.ok(bundles.some((source) => source.includes("Code senden")));
+  assert.ok(bundles.every((source) => !source.includes("thomas.giger@cloud-7.net")));
+});
+
 test("Produktionsbuild enthält alle Seiten", () => {
   for (const page of pages) {
     const file = resolve(dist, page);
@@ -60,7 +70,8 @@ test("Startseite nennt Mandat und Partei", () => {
   assert.match(html, /silvia-steiner/);
   assert.match(html, /Trainingsanzug/);
   assert.match(html, /Lasagne/);
-  assert.match(html, /hero-copy/);
+  assert.match(html, /data-edit=/);
+  assert.equal(existsSync(resolve(dist, "data", "content-live.json")), true);
 });
 
 test("Impressum nennt inspiroo als Umsetzung", () => {
@@ -151,3 +162,13 @@ test("CI-Schrift Modern Era ist im Build", () => {
   assert.match(css, /Modern Era/);
   assert.match(css, /Arial/);
 });
+
+function jsFiles(dir) {
+  const files = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const full = resolve(dir, entry.name);
+    if (entry.isDirectory()) files.push(...jsFiles(full));
+    else if (entry.name.endsWith(".js")) files.push(full);
+  }
+  return files;
+}
