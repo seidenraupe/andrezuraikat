@@ -35,6 +35,10 @@ npm run preview  # Produktionsbuild lokal ansehen
 
 Fotos aus der Wix-Seite liegen unter `src/media/`. Übersicht: [docs/FOTOS.md](docs/FOTOS.md).
 
+## KreativMedia (Produktion)
+
+FTP/SFTP-Zugang nur lokal: `.env` aus `.env.example` anlegen, Werte aus Plesk eintragen. Die Datei wird nicht ins Git übernommen.
+
 ## Dokumentation
 
 - [Konzept](docs/KONZEPT.md) — Ziel, Inhalt, Architektur, was von Wix übernommen wird
