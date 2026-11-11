@@ -9,9 +9,11 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 5173",
     "test": "node --test tests/*.test.mjs",
-    "check": "npm run build && npm test"
+    "check": "npm run build && npm test",
+    "deploy:kreativmedia": "npm run build && node scripts/deploy-kreativmedia.mjs"
   },
   "devDependencies": {
+    "ssh2-sftp-client": "^12.1.1",
     "vite": "^6.3.5"
   }
 }

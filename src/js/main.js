@@ -13,7 +13,27 @@ if (year) {
   year.textContent = String(new Date().getFullYear());
 }
 
+initMobileNav();
 initStimmenRandom();
+
+function initMobileNav() {
+  const header = document.querySelector(".site-header");
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector("#site-nav");
+  if (!header || !toggle || !nav) return;
+
+  toggle.addEventListener("click", () => {
+    const open = header.classList.toggle("is-nav-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      header.classList.remove("is-nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
 function initStimmenRandom() {
   const root = document.querySelector("[data-stimmen-random]");

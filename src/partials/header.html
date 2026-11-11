@@ -21,7 +21,18 @@
             />
           </a>
         </div>
-        <nav class="nav" aria-label="Hauptnavigation">
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menü"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="nav" aria-label="Hauptnavigation">
           <a data-nav="index" href="./index.html" data-edit="header-6">Start</a>
           <a data-nav="ueber" href="./ueber.html" data-edit="header-7">Über mich</a>
           <a class="nav-campaign" data-nav="kantonsrat" href="./kantonsrat.html"
